@@ -14,7 +14,7 @@ To install this module copy the code from this repo to `app/code/Space48/SeoTitl
 
 From the terminal execute the following:
 
-`composer config repositories.space48-quick-view vcs git@github.com:Space48/SeoTitles.git`
+`composer config repositories.space48-seotitles vcs git@github.com:Space48/SeoTitles.git`
 
 then
 

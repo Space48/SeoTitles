@@ -21,7 +21,7 @@ then
 `composer require "space48/SeoTitles:{module-version}"`
 
 ## How to use it
-Once installed, go to the `Admin Penel -> Products -> Categories -> Select a category, 
+Once installed, go to the `Admin Panel -> Products -> Categories -> Select a category, 
 and under Search Engine Optimization section you will see a field called `H1 Override`.
 
 

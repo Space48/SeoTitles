@@ -26,4 +26,4 @@ and under Search Engine Optimization section you will see a field called `H1 Ove
 
 
 ## How to uninstall
-`bin/magento module:uninstall Space48_SeoTitle`
+`bin/magento module:uninstall Space48_SeoTitles`

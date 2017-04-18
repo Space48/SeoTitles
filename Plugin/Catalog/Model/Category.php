@@ -1,15 +1,15 @@
 <?php
 /**
- * Space48_SeoTitle
+ * Space48_SeoTitles
  *
  * @category    Space48
- * @package     Space48_SeoTitle
+ * @package     Space48_SeoTitles
  * @Date        04/2017
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  * @author      @diazwatson
  */
 
-namespace Space48\SeoTitle\Plugin\Catalog\Model;
+namespace Space48\SeoTitles\Plugin\Catalog\Model;
 
 use Magento\Catalog\Model\ResourceModel\Category\CollectionFactory;
 use Magento\Store\Model\StoreManagerInterface;

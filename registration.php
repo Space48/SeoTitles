@@ -2,6 +2,6 @@
 
 \Magento\Framework\Component\ComponentRegistrar::register(
     \Magento\Framework\Component\ComponentRegistrar::MODULE,
-    'Space48_SeoTitle',
+    'Space48_SeoTitles',
     __DIR__
 );

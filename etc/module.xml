@@ -1,7 +1,18 @@
 <?xml version="1.0"?>
+<!--
+/**
+ * Space48_SeoTitles
+ *
+ * @category    Space48
+ * @package     Space48_SeoTitles
+ * @Date        04/2017
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ * @author      @diazwatson
+ */-->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
-    <module name="Space48_SeoTitles" setup_version="1.0.0">
+    <module name="Space48_SeoTitles" setup_version="1.1.0">
         <sequence>
+            <module name="Magento_Catalog"/>
         </sequence>
     </module>
 </config>

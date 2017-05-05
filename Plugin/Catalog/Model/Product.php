@@ -14,13 +14,14 @@ namespace Space48\SeoTitles\Plugin\Catalog\Model;
 use Magento\Catalog\Model\ResourceModel\Category\CollectionFactory;
 use Magento\Store\Model\StoreManagerInterface;
 
-class Category
+class Product
 {
 
     /**
      * @var CollectionFactory
      */
     private $collectionFactory;
+
     /**
      * @var StoreManagerInterface
      */
@@ -41,41 +42,14 @@ class Category
     }
 
     /**
-     * @param $category
+     * @param $product
      * @param $result
      *
      * @return string
      */
-    public function afterGetName($category, $result)
+    public function afterGetName($product, $result)
     {
-        return $category->getData('h1_override') ? $category->getData('h1_override') : $result;
+        return $product->getData('h1_override') ? $product->getData('h1_override') : $result;
     }
 
-    /**
-     * @param $subject
-     *
-     * @return \Magento\Framework\DataObject[]
-     */
-    public function afterGetParentCategories($subject)
-    {
-        $pathIds = array_reverse(explode(',', $subject->getPathInStore()));
-        /** @var \Magento\Catalog\Model\ResourceModel\Category\Collection $categories */
-        $categories = $this->collectionFactory->create();
-
-        return $categories->setStore(
-            $this->storeManager->getStore()
-        )->addAttributeToSelect(
-            'name'
-        )->addAttributeToSelect(
-            'h1_override'
-        )->addAttributeToSelect(
-            'url_key'
-        )->addFieldToFilter(
-            'entity_id',
-            ['in' => $pathIds]
-        )->addFieldToFilter(
-            'is_active',
-            1
-        )->load()->getItems();
-    }
 }

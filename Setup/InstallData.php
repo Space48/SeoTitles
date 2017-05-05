@@ -16,7 +16,6 @@ use Magento\Framework\Setup\InstallDataInterface;
 use Magento\Framework\Setup\ModuleContextInterface;
 use Magento\Framework\Setup\ModuleDataSetupInterface;
 use Magento\Catalog\Model\Category;
-use Magento\Framework\DB\Ddl\Table;
 use Magento\Eav\Setup\EavSetupFactory;
 
 class InstallData implements InstallDataInterface
@@ -32,8 +31,7 @@ class InstallData implements InstallDataInterface
      */
     public function __construct(
         EavSetupFactory $eavSetupFactory
-    )
-    {
+    ) {
         $this->eavSetupFactory = $eavSetupFactory;
     }
 

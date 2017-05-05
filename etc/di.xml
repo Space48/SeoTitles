@@ -1,14 +1,19 @@
 <?xml version="1.0"?>
 <!--
 /**
- * ${FILE_NAME}
+ * Space48_SeoTitles
  *
+ * @category    Space48
+ * @package     Space48_SeoTitles
  * @Date        04/2017
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  * @author      @diazwatson
  */-->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <type name="\Magento\Catalog\Model\Category">
-        <plugin name="Space48_SeoTitles::frameworkDataTreeNode" type="\Space48\SeoTitles\Plugin\Catalog\Model\Category" sortOrder="100" disabled="false"/>
+        <plugin name="space48_seotitles_category_name" type="\Space48\SeoTitles\Plugin\Catalog\Model\Category" sortOrder="100" disabled="false"/>
+    </type>
+    <type name="\Magento\Catalog\Model\Product">
+        <plugin name="space48_seotitles_product_name" type="\Space48\SeoTitles\Plugin\Catalog\Model\Product" sortOrder="100" disabled="false"/>
     </type>
 </config>

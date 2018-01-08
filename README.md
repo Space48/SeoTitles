@@ -22,7 +22,11 @@ From the terminal execute the following:
 
 then
 
-`composer require "space48/SeoTitles:{module-version}"`
+`composer require "space48/SeoTitles:{module-version}"` for a specific [version](https://github.com/Space48/SeoTitles/releases)
+
+or
+
+`composer require "space48/SeoTitles"` to install the latest version
 
 ## How to use it
 Once installed, go to the `Admin Penel -> Products -> Categories -> Select a category, 

@@ -10,27 +10,31 @@ This module adds and extra leyer to override H1 values for categories and produc
 
 ## Installation
 
-**Manually** 
+### Manually 
 
-To install this module copy the code from this repo to `app/code/Space48/SeoTitles` folder of your Magento 2 instance, then you need to run php `bin/magento setup:upgrade`
+To install this module copy the code from this repository to `app/code/Space48/SeoTitles` folder of your Magento 2 instance,  you need to run the following commands from the terminal:
+ 
+1. `bin/magento setup:upgrade`
 
-**Via composer**:
+### Using Composer
+
+From the terminal execute the following commands:
+
+1. `composer config repositories.space48-seo-titles vcs git@github.com:Space48/SeoTitles.git`
+2. `composer require "space48/SeoTitles"` to install the latest version or `"space48/SeoTitles:{module-version}"` to install a specific [version](https://github.com/Space48/seotitles/releases).
+3. `bin/magento setup:upgrade`
+
+### Using Modman (Good for development)
 
 From the terminal execute the following:
 
-`composer config repositories.space48-seo-titles vcs git@github.com:Space48/SeoTitles.git`
-
-then
-
-`composer require "space48/SeoTitles:{module-version}"` for a specific [version](https://github.com/Space48/SeoTitles/releases)
-
-or
-
-`composer require "space48/SeoTitles"` to install the latest version
+1. `modman init` (in case Modman already initialized there)
+2. `modman clone git@github.com:Space48/SeoTitles.git`
+3. `bin/magento setup:upgrade`
 
 ## How to use it
-Once installed, go to the `Admin Penel -> Products -> Categories -> Select a category, 
-and under Search Engine Optimization section you will see a field called `H1 Override`.
+Once installed, go to the `Admin Penel -> Products -> Categories -> Select a category`, 
+and under `Search Engine Optimization` section you will see a field called `H1 Override`.
 
 
 ## How to uninstall

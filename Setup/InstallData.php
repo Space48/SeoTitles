@@ -21,6 +21,9 @@ use Magento\Eav\Setup\EavSetupFactory;
 class InstallData implements InstallDataInterface
 {
 
+    /**
+     * @var EavSetupFactory
+     */
     private $eavSetupFactory;
 
     /**
@@ -31,7 +34,8 @@ class InstallData implements InstallDataInterface
      */
     public function __construct(
         EavSetupFactory $eavSetupFactory
-    ) {
+    )
+    {
         $this->eavSetupFactory = $eavSetupFactory;
     }
 
@@ -39,30 +43,30 @@ class InstallData implements InstallDataInterface
      * Installs data for a module
      *
      * @param ModuleDataSetupInterface $setup
-     * @param ModuleContextInterface   $context
+     * @param ModuleContextInterface $context
      *
      * @return void
      */
     public function install(ModuleDataSetupInterface $setup, ModuleContextInterface $context)
     {
-        $setup->startSetup();
+        if (version_compare($context->getVersion(), '1.0.0', '<')) {
 
-        /** @var \Magento\Eav\Setup\EavSetup $eavSetup */
-        $eavSetup = $this->eavSetupFactory->create(['setup' => $setup]);
+            /** @var \Magento\Eav\Setup\EavSetup $eavSetup */
+            $eavSetup = $this->eavSetupFactory->create(['setup' => $setup]);
 
-        $eavSetup->addAttribute(
-            Category::ENTITY,
-            'h1_override',
-            [
-                'type'       => 'varchar',
-                'label'      => 'H1 Override',
-                'input'      => 'text',
-                'required'   => false,
-                'sort_order' => 100,
-                'global'     => ScopedAttributeInterface::SCOPE_STORE,
-                'group'      => 'General Information',
+            $eavSetup->addAttribute(
+                Category::ENTITY,
+                'h1_override',
+                [
+                    'type'       => 'varchar',
+                    'label'      => 'H1 Override',
+                    'input'      => 'text',
+                    'required'   => false,
+                    'sort_order' => 100,
+                    'global'     => ScopedAttributeInterface::SCOPE_STORE,
+                    'group'      => 'General Information',
 
-            ]);
-        $setup->endSetup();
+                ]);
+        }
     }
 }

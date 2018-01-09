@@ -34,7 +34,7 @@ From the terminal execute the following:
 
 ## How to use it
 Once installed, go to the `Admin Panel -> Products -> Categories -> Select a category`, 
-and under `Search Engine Optimization` section you will see a field called `H1 Override`.
+and under `Search Engine Optimisation` section you will see a field called `H1 Override`.
 
 
 ## How to uninstall

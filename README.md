@@ -38,4 +38,9 @@ and under `Search Engine Optimization` section you will see a field called `H1 O
 
 
 ## How to uninstall
+
+From the terminal execute the following:
+
 `bin/magento module:uninstall Space48_SeoTitles`
+
+**Note:** This only works if you have installed the module using composer.

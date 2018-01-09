@@ -33,7 +33,7 @@ From the terminal execute the following:
 3. `bin/magento setup:upgrade`
 
 ## How to use it
-Once installed, go to the `Admin Penel -> Products -> Categories -> Select a category`, 
+Once installed, go to the `Admin Panel -> Products -> Categories -> Select a category`, 
 and under `Search Engine Optimization` section you will see a field called `H1 Override`.
 
 

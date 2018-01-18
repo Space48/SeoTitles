@@ -44,3 +44,15 @@ From the terminal execute the following:
 `bin/magento module:uninstall Space48_SeoTitles`
 
 **Note:** This only works if you have installed the module using composer.
+
+## How to test it
+### Steps
+1. Go to the `Admin Panel -> Products -> Categories` and select a category, then 
+under `Search Engine Optimisation` section you will see a field called `H1 Override`.
+2. Write in there `Seo Title Works` and save changes.
+3. check changes in the frontend.
+
+### Expected
+- You should see the title of the category has changed.
+- You should see the name of the category in the breadcrumbs has changed.
+- You should see the menu item related to that category has NOT changed.

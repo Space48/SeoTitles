@@ -50,9 +50,13 @@ From the terminal execute the following:
 1. Go to the `Admin Panel -> Products -> Categories` and select a category, then 
 under `Search Engine Optimisation` section you will see a field called `H1 Override`.
 2. Write in there `Seo Title Works` and save changes.
-3. check changes in the frontend.
+![seo_title_test__id__4____categories___inventory___catalog___magento_admin](https://user-images.githubusercontent.com/1080386/35106906-71ec7ea8-fc67-11e7-90bb-a14ebfcbcbaa.jpg)
+
+3. Check changes in the frontend.
 
 ### Expected
 - You should see the title of the category has changed.
 - You should see the name of the category in the breadcrumbs has changed.
 - You should see the menu item related to that category has NOT changed.
+![seo_title_test](https://user-images.githubusercontent.com/1080386/35107016-bf28ac28-fc67-11e7-8e7f-37b14ee1f923.jpg)
+
